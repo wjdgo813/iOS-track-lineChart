@@ -44,6 +44,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self commonInit];
+        _color = [UIColor fsLightBlue];
     }
     return self;
 }
@@ -79,14 +80,10 @@
 //        [self.layers removeAllObjects];
 //    }
 //    [self commonInit];
-//    
+//
 //}
 
 -(void)setChartData:(NSArray *)chartData{
-//    [self.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
-//    if(self.layers.count > 0){
-//        [self.layers removeAllObjects];
-//    }
     [self clearChartData];
     [self commonInit];
     
@@ -95,15 +92,15 @@
 
 - (void)setDefaultParameters
 {
-    _color = [UIColor fsLightBlue];
-    _fillColor = [_color colorWithAlphaComponent:0.25];
+    //서쥬 요청 전 0.6, 요청 후 0.4
+    _fillColor = [_color colorWithAlphaComponent:0.4];
     _verticalGridStep = 3;
     _horizontalGridStep = 3;
     _margin = 5.0f;
     _axisWidth = self.frame.size.width - 2 * _margin;
     _axisHeight = self.frame.size.height - 2 * _margin;
-    _axisColor = [UIColor colorWithWhite:0.7 alpha:1.0];
-    _innerGridColor = [UIColor colorWithWhite:0.9 alpha:1.0];
+    _axisColor = [UIColor colorWithWhite:1.0 alpha:1.0];
+    _innerGridColor = [UIColor colorWithWhite:1.0 alpha:1.0];
     _drawInnerGrid = YES;
     _bezierSmoothing = YES;
     _bezierSmoothingTension = 0.2;
@@ -121,7 +118,7 @@
     _indexLabelTextColor = [UIColor grayColor];
     _indexLabelFont = [UIFont fontWithName:@"HelveticaNeue-Light" size:10];
     
-    _valueLabelBackgroundColor = [UIColor colorWithWhite:1 alpha:0.75];
+    _valueLabelBackgroundColor = [UIColor colorWithWhite:1 alpha:1.0];
     _valueLabelTextColor = [UIColor grayColor];
     _valueLabelFont = [UIFont fontWithName:@"HelveticaNeue-Light" size:11];
     _valueLabelPosition = ValueLabelRight;
@@ -265,11 +262,13 @@
 {
     CGFloat minBound = [self minVerticalBound]; //최소값
     CGFloat maxBound = [self maxVerticalBound]; //최댓값
-    
+    if(minBound == 0 && maxBound == 0){
+        return;
+    }
     CGFloat scale = _axisHeight / (maxBound - minBound);
     
     
-
+    
     UIBezierPath *fill = [self getLinePath:scale withSmoothing:_bezierSmoothing close:YES];
     
     if(_fillColor) {
@@ -289,38 +288,38 @@
         fillAnimation.duration = _animationDuration;
         fillAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
         fillAnimation.fillMode = kCAFillModeForwards;
-//        fillAnimation.fromValue = (id)noFill.CGPath;
+        //        fillAnimation.fromValue = (id)noFill.CGPath;
         fillAnimation.toValue = (id)fill.CGPath;
         [fillLayer addAnimation:fillAnimation forKey:@"path"];
     }
     
-//    CAShapeLayer *pathLayer = [CAShapeLayer layer];
-//    pathLayer.frame = CGRectMake(self.bounds.origin.x, self.bounds.origin.y + minBound * scale, self.bounds.size.width, self.bounds.size.height);
-//    pathLayer.bounds = self.bounds;
-////    pathLayer.path = path.CGPath;
-//    pathLayer.strokeColor = [_color CGColor];
-//    pathLayer.fillColor = nil;
-//    pathLayer.lineWidth = _lineWidth;
-//    pathLayer.lineJoin = kCALineJoinRound;
+    //    CAShapeLayer *pathLayer = [CAShapeLayer layer];
+    //    pathLayer.frame = CGRectMake(self.bounds.origin.x, self.bounds.origin.y + minBound * scale, self.bounds.size.width, self.bounds.size.height);
+    //    pathLayer.bounds = self.bounds;
+    ////    pathLayer.path = path.CGPath;
+    //    pathLayer.strokeColor = [_color CGColor];
+    //    pathLayer.fillColor = nil;
+    //    pathLayer.lineWidth = _lineWidth;
+    //    pathLayer.lineJoin = kCALineJoinRound;
     
-//    [self.layer addSublayer:pathLayer];
-//    [self.layers addObject:pathLayer];
+    //    [self.layer addSublayer:pathLayer];
+    //    [self.layers addObject:pathLayer];
     
-//    if(_fillColor) {
-//        CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
-//        pathAnimation.duration = _animationDuration;
-//        pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-//        pathAnimation.fromValue = (__bridge id)(noPath.CGPath);
-////        pathAnimation.toValue = (__bridge id)(path.CGPath);
-//        [pathLayer addAnimation:pathAnimation forKey:@"path"];
-//    } else {
-//        CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-//        pathAnimation.duration = _animationDuration;
-//        pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-//        pathAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
-//        pathAnimation.toValue = [NSNumber numberWithFloat:1.0f];
-//        [pathLayer addAnimation:pathAnimation forKey:@"path"];
-//    }
+    //    if(_fillColor) {
+    //        CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
+    //        pathAnimation.duration = _animationDuration;
+    //        pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    //        pathAnimation.fromValue = (__bridge id)(noPath.CGPath);
+    ////        pathAnimation.toValue = (__bridge id)(path.CGPath);
+    //        [pathLayer addAnimation:pathAnimation forKey:@"path"];
+    //    } else {
+    //        CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    //        pathAnimation.duration = _animationDuration;
+    //        pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    //        pathAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
+    //        pathAnimation.toValue = [NSNumber numberWithFloat:1.0f];
+    //        [pathLayer addAnimation:pathAnimation forKey:@"path"];
+    //    }
     
 }
 

@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -70,10 +70,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundGraphView" destination="yaK-8Z-Cls" id="gyh-Pj-SkD"/>
+                        <outlet property="fillBackgroundView" destination="mkZ-H6-cAy" id="dSb-ta-959"/>
                         <outlet property="mySlider" destination="Tpr-bI-yiu" id="ZYH-CH-Qab"/>
                         <outlet property="myView" destination="vmc-Q5-sqk" id="zfG-r8-pXk"/>
-                        <outlet property="secondGraphView" destination="yaK-8Z-Cls" id="geb-fO-HjN"/>
-                        <outlet property="secondView" destination="mkZ-H6-cAy" id="vR5-rO-Wcl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

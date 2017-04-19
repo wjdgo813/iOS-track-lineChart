@@ -11,43 +11,59 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIView *myView;
-@property (weak, nonatomic) IBOutlet UIView *secondView;
+
+@property (weak, nonatomic) IBOutlet UIView *fillBackgroundView;
 @property (weak, nonatomic) IBOutlet UISlider *mySlider;
-@property (retain, nonatomic) FSLineChart *lineChart2;
-@property (weak, nonatomic) IBOutlet UIView *secondGraphView;
+@property (retain, nonatomic) FSLineChart *fillLineChart;
+@property (retain, nonatomic) FSLineChart *backgroundLineChart;
+
+@property (weak, nonatomic) IBOutlet UIView *backgroundGraphView;
 
 @end
 
 @implementation ViewController
 - (IBAction)changedValue:(id)sender {
 
+    float sliderRange = self.mySlider.frame.size.width - self.mySlider.currentThumbImage.size.width;
+    float sliderOrigin = self.mySlider.frame.origin.x + (self.mySlider.currentThumbImage.size.width / 2.0);
+    float sliderValueToPixels = (((self.mySlider.value - self.mySlider.minimumValue)/(self.mySlider.maximumValue - self.mySlider.minimumValue)) * sliderRange) + sliderOrigin;
     
-    [UIView animateWithDuration:0.1
-                     animations:^{
-                         CGRect temp = self.secondView.frame;
-                         temp.size.width = self.mySlider.value;
-                         self.secondView.frame = temp;
-                     }];
+    int tempInt =90;
+    
+    if(!isnan(sliderValueToPixels)){
+        dispatch_async(dispatch_get_main_queue(), ^{
+            CGRect temp = self.fillBackgroundView.frame;
+            temp.size.width = sliderValueToPixels-tempInt;
+            self.fillBackgroundView.frame = temp;
+        });
+    }
+//http://stackoverflow.com/questions/1714405/how-to-get-the-center-of-the-thumb-image-of-uislider
     
     
 }
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    NSArray* months = @[@"January", @"February", @"March", @"April", @"May", @"June", @"July"];
+    self.mySlider.maximumValue = self.fillBackgroundView.frame.size.width;
+    
+    self.fillBackgroundView.frame = CGRectMake(0, 0, self.fillBackgroundView.frame.size.width, self.fillBackgroundView.frame.size.height);
+    
     NSArray* chartData = @[[NSNumber numberWithInt:2], [NSNumber numberWithInt:5], [NSNumber numberWithInt:3], [NSNumber numberWithInt:2],[NSNumber numberWithInt:1], [NSNumber numberWithInt:4], [NSNumber numberWithInt:3]];
     
-    self.mySlider.maximumValue = self.secondView.frame.size.width;
     
-    FSLineChart* lineChart = [[FSLineChart alloc] initWithFrame:CGRectMake(0, 0, self.myView.frame.size.width, self.myView.frame.size.height)];
-    [lineChart setChartData:chartData];
-    [self.myView addSubview:lineChart];
     
-    self.lineChart2 = [[FSLineChart alloc] initWithFrame:CGRectMake(0, 0, self.secondView.frame.size.width, self.secondView.frame.size.height)];
-    self.lineChart2.fillColor = [UIColor redColor];
-    self.lineChart2.color = [UIColor redColor];
-    [self.lineChart2 setChartData:chartData];
-    [self.secondGraphView addSubview:self.lineChart2];
+    self.backgroundLineChart = [[FSLineChart alloc] initWithFrame:CGRectMake(0, 0, self.myView.frame.size.width, self.myView.frame.size.height)];
+    self.backgroundLineChart.color = [UIColor grayColor];
+    [self.backgroundLineChart setChartData:chartData];
+    [self.backgroundGraphView addSubview:self.backgroundLineChart];
+    
+    
+    self.fillLineChart = [[FSLineChart alloc] initWithFrame:CGRectMake(0, 0, self.fillBackgroundView.frame.size.width, self.fillBackgroundView.frame.size.height)];
+    self.fillLineChart.color = [UIColor blueColor];
+    [self.fillLineChart setChartData:chartData];
+    
+    [self.myView addSubview:self.fillLineChart];
     
     [self.mySlider setMinimumTrackTintColor:[UIColor redColor]];
     

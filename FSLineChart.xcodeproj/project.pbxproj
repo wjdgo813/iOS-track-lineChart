@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3537FA49722D536315F7851E /* libPods-FSLineChartTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF59AC67E953A003E1B26C3 /* libPods-FSLineChartTests.a */; };
+		7190EA11B90C51DF2624B79E /* libPods-FSLineChartUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B326070BCF4CAE6C913FFFF /* libPods-FSLineChartUITests.a */; };
+		BA50D4641E55B89400DE9C99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA50D4631E55B89400DE9C99 /* main.m */; };
+		BA50D4671E55B89400DE9C99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA50D4661E55B89400DE9C99 /* AppDelegate.m */; };
+		BA50D46A1E55B89400DE9C99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA50D4691E55B89400DE9C99 /* ViewController.m */; };
+		BA50D46D1E55B89400DE9C99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA50D46B1E55B89400DE9C99 /* Main.storyboard */; };
+		BA50D46F1E55B89400DE9C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA50D46E1E55B89400DE9C99 /* Assets.xcassets */; };
+		BA50D4721E55B89400DE9C99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA50D4701E55B89400DE9C99 /* LaunchScreen.storyboard */; };
+		BA50D47D1E55B89400DE9C99 /* FSLineChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA50D47C1E55B89400DE9C99 /* FSLineChartTests.m */; };
+		BA50D4881E55B89400DE9C99 /* FSLineChartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA50D4871E55B89400DE9C99 /* FSLineChartUITests.m */; };
+		F9945A80654BBC2B7583EEDC /* libPods-FSLineChart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 106AFBA5E6A29CEA0A3F4241 /* libPods-FSLineChart.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA50D4791E55B89400DE9C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA50D4571E55B89400DE9C99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA50D45E1E55B89400DE9C99;
+			remoteInfo = FSLineChart;
+		};
+		BA50D4841E55B89400DE9C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA50D4571E55B89400DE9C99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA50D45E1E55B89400DE9C99;
+			remoteInfo = FSLineChart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AF59AC67E953A003E1B26C3 /* libPods-FSLineChartTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FSLineChartTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		106AFBA5E6A29CEA0A3F4241 /* libPods-FSLineChart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FSLineChart.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		312F1942470C82E1218EFC81 /* Pods-FSLineChartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSLineChartTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FSLineChartTests/Pods-FSLineChartTests.release.xcconfig"; sourceTree = "<group>"; };
+		6B326070BCF4CAE6C913FFFF /* libPods-FSLineChartUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FSLineChartUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB93DFFE88E5F189186CBBE5 /* Pods-FSLineChartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSLineChartUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FSLineChartUITests/Pods-FSLineChartUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BA50D45F1E55B89400DE9C99 /* FSLineChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSLineChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA50D4631E55B89400DE9C99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA50D4651E55B89400DE9C99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BA50D4661E55B89400DE9C99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BA50D4681E55B89400DE9C99 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BA50D4691E55B89400DE9C99 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BA50D46C1E55B89400DE9C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA50D46E1E55B89400DE9C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA50D4711E55B89400DE9C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA50D4731E55B89400DE9C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA50D4781E55B89400DE9C99 /* FSLineChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSLineChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA50D47C1E55B89400DE9C99 /* FSLineChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSLineChartTests.m; sourceTree = "<group>"; };
+		BA50D47E1E55B89400DE9C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA50D4831E55B89400DE9C99 /* FSLineChartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSLineChartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA50D4871E55B89400DE9C99 /* FSLineChartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSLineChartUITests.m; sourceTree = "<group>"; };
+		BA50D4891E55B89400DE9C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFD27A3160DE9764314229BE /* Pods-FSLineChartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSLineChartUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FSLineChartUITests/Pods-FSLineChartUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F071EBA78374E7E59A66E6C2 /* Pods-FSLineChartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSLineChartTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FSLineChartTests/Pods-FSLineChartTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4723FC4C7E282F81CAE0136 /* Pods-FSLineChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSLineChart.release.xcconfig"; path = "Pods/Target Support Files/Pods-FSLineChart/Pods-FSLineChart.release.xcconfig"; sourceTree = "<group>"; };
+		FDE8E6C9D4944E89F5AA8410 /* Pods-FSLineChart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSLineChart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FSLineChart/Pods-FSLineChart.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA50D45C1E55B89400DE9C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9945A80654BBC2B7583EEDC /* libPods-FSLineChart.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA50D4751E55B89400DE9C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3537FA49722D536315F7851E /* libPods-FSLineChartTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA50D4801E55B89400DE9C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7190EA11B90C51DF2624B79E /* libPods-FSLineChartUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E009337A9EB0E6E8027233E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				106AFBA5E6A29CEA0A3F4241 /* libPods-FSLineChart.a */,
+				0AF59AC67E953A003E1B26C3 /* libPods-FSLineChartTests.a */,
+				6B326070BCF4CAE6C913FFFF /* libPods-FSLineChartUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1503017A60843BFF526C007 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDE8E6C9D4944E89F5AA8410 /* Pods-FSLineChart.debug.xcconfig */,
+				F4723FC4C7E282F81CAE0136 /* Pods-FSLineChart.release.xcconfig */,
+				F071EBA78374E7E59A66E6C2 /* Pods-FSLineChartTests.debug.xcconfig */,
+				312F1942470C82E1218EFC81 /* Pods-FSLineChartTests.release.xcconfig */,
+				BFD27A3160DE9764314229BE /* Pods-FSLineChartUITests.debug.xcconfig */,
+				AB93DFFE88E5F189186CBBE5 /* Pods-FSLineChartUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA50D4561E55B89400DE9C99 = {
+			isa = PBXGroup;
+			children = (
+				BA50D4611E55B89400DE9C99 /* FSLineChart */,
+				BA50D47B1E55B89400DE9C99 /* FSLineChartTests */,
+				BA50D4861E55B89400DE9C99 /* FSLineChartUITests */,
+				BA50D4601E55B89400DE9C99 /* Products */,
+				B1503017A60843BFF526C007 /* Pods */,
+				1E009337A9EB0E6E8027233E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BA50D4601E55B89400DE9C99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA50D45F1E55B89400DE9C99 /* FSLineChart.app */,
+				BA50D4781E55B89400DE9C99 /* FSLineChartTests.xctest */,
+				BA50D4831E55B89400DE9C99 /* FSLineChartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA50D4611E55B89400DE9C99 /* FSLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				BA50D4651E55B89400DE9C99 /* AppDelegate.h */,
+				BA50D4661E55B89400DE9C99 /* AppDelegate.m */,
+				BA50D4681E55B89400DE9C99 /* ViewController.h */,
+				BA50D4691E55B89400DE9C99 /* ViewController.m */,
+				BA50D46B1E55B89400DE9C99 /* Main.storyboard */,
+				BA50D46E1E55B89400DE9C99 /* Assets.xcassets */,
+				BA50D4701E55B89400DE9C99 /* LaunchScreen.storyboard */,
+				BA50D4731E55B89400DE9C99 /* Info.plist */,
+				BA50D4621E55B89400DE9C99 /* Supporting Files */,
+			);
+			path = FSLineChart;
+			sourceTree = "<group>";
+		};
+		BA50D4621E55B89400DE9C99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA50D4631E55B89400DE9C99 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA50D47B1E55B89400DE9C99 /* FSLineChartTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA50D47C1E55B89400DE9C99 /* FSLineChartTests.m */,
+				BA50D47E1E55B89400DE9C99 /* Info.plist */,
+			);
+			path = FSLineChartTests;
+			sourceTree = "<group>";
+		};
+		BA50D4861E55B89400DE9C99 /* FSLineChartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA50D4871E55B89400DE9C99 /* FSLineChartUITests.m */,
+				BA50D4891E55B89400DE9C99 /* Info.plist */,
+			);
+			path = FSLineChartUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA50D45E1E55B89400DE9C99 /* FSLineChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA50D48C1E55B89400DE9C99 /* Build configuration list for PBXNativeTarget "FSLineChart" */;
+			buildPhases = (
+				B95E1D2D07D5BFB0E45FE87C /* [CP] Check Pods Manifest.lock */,
+				BA50D45B1E55B89400DE9C99 /* Sources */,
+				BA50D45C1E55B89400DE9C99 /* Frameworks */,
+				BA50D45D1E55B89400DE9C99 /* Resources */,
+				D5E6AA2B3A1A2A6D8F6FFA24 /* [CP] Embed Pods Frameworks */,
+				F8A578A90FF948230B065046 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSLineChart;
+			productName = FSLineChart;
+			productReference = BA50D45F1E55B89400DE9C99 /* FSLineChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA50D4771E55B89400DE9C99 /* FSLineChartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA50D48F1E55B89400DE9C99 /* Build configuration list for PBXNativeTarget "FSLineChartTests" */;
+			buildPhases = (
+				FF4688892B80006C5770E7AB /* [CP] Check Pods Manifest.lock */,
+				BA50D4741E55B89400DE9C99 /* Sources */,
+				BA50D4751E55B89400DE9C99 /* Frameworks */,
+				BA50D4761E55B89400DE9C99 /* Resources */,
+				DAC00E48E2576F327D96027F /* [CP] Embed Pods Frameworks */,
+				FC0BFB99631E03727C660870 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA50D47A1E55B89400DE9C99 /* PBXTargetDependency */,
+			);
+			name = FSLineChartTests;
+			productName = FSLineChartTests;
+			productReference = BA50D4781E55B89400DE9C99 /* FSLineChartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA50D4821E55B89400DE9C99 /* FSLineChartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA50D4921E55B89400DE9C99 /* Build configuration list for PBXNativeTarget "FSLineChartUITests" */;
+			buildPhases = (
+				5FC19BA3179138F75115D225 /* [CP] Check Pods Manifest.lock */,
+				BA50D47F1E55B89400DE9C99 /* Sources */,
+				BA50D4801E55B89400DE9C99 /* Frameworks */,
+				BA50D4811E55B89400DE9C99 /* Resources */,
+				FAC2C8F798C48A76033B4D9B /* [CP] Embed Pods Frameworks */,
+				408FA175CC63BDE00015AAA2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA50D4851E55B89400DE9C99 /* PBXTargetDependency */,
+			);
+			name = FSLineChartUITests;
+			productName = FSLineChartUITests;
+			productReference = BA50D4831E55B89400DE9C99 /* FSLineChartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA50D4571E55B89400DE9C99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = JHH;
+				TargetAttributes = {
+					BA50D45E1E55B89400DE9C99 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 28K9LD277B;
+						ProvisioningStyle = Automatic;
+					};
+					BA50D4771E55B89400DE9C99 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA50D45E1E55B89400DE9C99;
+					};
+					BA50D4821E55B89400DE9C99 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA50D45E1E55B89400DE9C99;
+					};
+				};
+			};
+			buildConfigurationList = BA50D45A1E55B89400DE9C99 /* Build configuration list for PBXProject "FSLineChart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA50D4561E55B89400DE9C99;
+			productRefGroup = BA50D4601E55B89400DE9C99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA50D45E1E55B89400DE9C99 /* FSLineChart */,
+				BA50D4771E55B89400DE9C99 /* FSLineChartTests */,
+				BA50D4821E55B89400DE9C99 /* FSLineChartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA50D45D1E55B89400DE9C99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA50D4721E55B89400DE9C99 /* LaunchScreen.storyboard in Resources */,
+				BA50D46F1E55B89400DE9C99 /* Assets.xcassets in Resources */,
+				BA50D46D1E55B89400DE9C99 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA50D4761E55B89400DE9C99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA50D4811E55B89400DE9C99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		408FA175CC63BDE00015AAA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FSLineChartUITests/Pods-FSLineChartUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FC19BA3179138F75115D225 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B95E1D2D07D5BFB0E45FE87C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D5E6AA2B3A1A2A6D8F6FFA24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FSLineChart/Pods-FSLineChart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAC00E48E2576F327D96027F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FSLineChartTests/Pods-FSLineChartTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8A578A90FF948230B065046 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FSLineChart/Pods-FSLineChart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAC2C8F798C48A76033B4D9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FSLineChartUITests/Pods-FSLineChartUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC0BFB99631E03727C660870 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FSLineChartTests/Pods-FSLineChartTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF4688892B80006C5770E7AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA50D45B1E55B89400DE9C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA50D46A1E55B89400DE9C99 /* ViewController.m in Sources */,
+				BA50D4671E55B89400DE9C99 /* AppDelegate.m in Sources */,
+				BA50D4641E55B89400DE9C99 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA50D4741E55B89400DE9C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA50D47D1E55B89400DE9C99 /* FSLineChartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA50D47F1E55B89400DE9C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA50D4881E55B89400DE9C99 /* FSLineChartUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA50D47A1E55B89400DE9C99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA50D45E1E55B89400DE9C99 /* FSLineChart */;
+			targetProxy = BA50D4791E55B89400DE9C99 /* PBXContainerItemProxy */;
+		};
+		BA50D4851E55B89400DE9C99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA50D45E1E55B89400DE9C99 /* FSLineChart */;
+			targetProxy = BA50D4841E55B89400DE9C99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA50D46B1E55B89400DE9C99 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA50D46C1E55B89400DE9C99 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA50D4701E55B89400DE9C99 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA50D4711E55B89400DE9C99 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA50D48A1E55B89400DE9C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA50D48B1E55B89400DE9C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA50D48D1E55B89400DE9C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDE8E6C9D4944E89F5AA8410 /* Pods-FSLineChart.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 28K9LD277B;
+				INFOPLIST_FILE = FSLineChart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JHH.FSLineChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BA50D48E1E55B89400DE9C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4723FC4C7E282F81CAE0136 /* Pods-FSLineChart.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 28K9LD277B;
+				INFOPLIST_FILE = FSLineChart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JHH.FSLineChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BA50D4901E55B89400DE9C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F071EBA78374E7E59A66E6C2 /* Pods-FSLineChartTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FSLineChartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JHH.FSLineChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FSLineChart.app/FSLineChart";
+			};
+			name = Debug;
+		};
+		BA50D4911E55B89400DE9C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 312F1942470C82E1218EFC81 /* Pods-FSLineChartTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FSLineChartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JHH.FSLineChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FSLineChart.app/FSLineChart";
+			};
+			name = Release;
+		};
+		BA50D4931E55B89400DE9C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFD27A3160DE9764314229BE /* Pods-FSLineChartUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = FSLineChartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JHH.FSLineChartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FSLineChart;
+			};
+			name = Debug;
+		};
+		BA50D4941E55B89400DE9C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB93DFFE88E5F189186CBBE5 /* Pods-FSLineChartUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = FSLineChartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JHH.FSLineChartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FSLineChart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA50D45A1E55B89400DE9C99 /* Build configuration list for PBXProject "FSLineChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA50D48A1E55B89400DE9C99 /* Debug */,
+				BA50D48B1E55B89400DE9C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA50D48C1E55B89400DE9C99 /* Build configuration list for PBXNativeTarget "FSLineChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA50D48D1E55B89400DE9C99 /* Debug */,
+				BA50D48E1E55B89400DE9C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA50D48F1E55B89400DE9C99 /* Build configuration list for PBXNativeTarget "FSLineChartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA50D4901E55B89400DE9C99 /* Debug */,
+				BA50D4911E55B89400DE9C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA50D4921E55B89400DE9C99 /* Build configuration list for PBXNativeTarget "FSLineChartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA50D4931E55B89400DE9C99 /* Debug */,
+				BA50D4941E55B89400DE9C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA50D4571E55B89400DE9C99 /* Project object */;
+}

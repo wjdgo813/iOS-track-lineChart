@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaK-8Z-Cls">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="1vz-J2-W2A"/>
+                                    <constraint firstAttribute="width" constant="240" id="efc-PR-EEL"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkZ-H6-cAy">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmc-Q5-sqk">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="TTV-xm-2Ex"/>
+                                            <constraint firstAttribute="height" constant="128" id="vm5-eC-3TW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vmc-Q5-sqk" secondAttribute="trailing" id="6JV-Ru-JDO"/>
+                                    <constraint firstAttribute="height" constant="128" id="78w-Fn-XBT"/>
+                                    <constraint firstAttribute="width" constant="240" id="DPQ-60-4WG"/>
+                                    <constraint firstAttribute="bottom" secondItem="vmc-Q5-sqk" secondAttribute="bottom" id="bCg-Fa-20q"/>
+                                    <constraint firstItem="vmc-Q5-sqk" firstAttribute="leading" secondItem="mkZ-H6-cAy" secondAttribute="leading" id="nGl-eB-IwQ"/>
+                                    <constraint firstItem="vmc-Q5-sqk" firstAttribute="top" secondItem="mkZ-H6-cAy" secondAttribute="top" id="tYR-Gf-0Rj"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Tpr-bI-yiu">
+                                <rect key="frame" x="65" y="397" width="244" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ya7-dU-avz"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changedValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="O6n-1S-Ot4"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tpr-bI-yiu" firstAttribute="top" secondItem="mkZ-H6-cAy" secondAttribute="bottom" id="Cte-Iu-qsT"/>
+                            <constraint firstItem="Tpr-bI-yiu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J36-GH-QBu"/>
+                            <constraint firstItem="yaK-8Z-Cls" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="P0v-9i-eQm"/>
+                            <constraint firstItem="mkZ-H6-cAy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iII-Xk-Kmj"/>
+                            <constraint firstItem="yaK-8Z-Cls" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xRh-pb-vOU"/>
+                            <constraint firstItem="mkZ-H6-cAy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zIy-95-Dgi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mySlider" destination="Tpr-bI-yiu" id="ZYH-CH-Qab"/>
+                        <outlet property="myView" destination="vmc-Q5-sqk" id="zfG-r8-pXk"/>
+                        <outlet property="secondGraphView" destination="yaK-8Z-Cls" id="geb-fO-HjN"/>
+                        <outlet property="secondView" destination="mkZ-H6-cAy" id="vR5-rO-Wcl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

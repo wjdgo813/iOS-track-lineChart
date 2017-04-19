@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>FSLineChart.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-FSLineChart.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-FSLineChartTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-FSLineChartUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2019D0A11AD1696A311A26E900DB8854</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5B779E7F4A81E7FD2739F968C5536410</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6700C3B5A4544B7C8B526FA34BC4DF2A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>99319C28BEAEFDEF2B943CBF66767F8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

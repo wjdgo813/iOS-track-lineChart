@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3052B2DEF20A1DB41791503C9F509041 /* FSLineChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFF1C630E91935C5B6C70CB18A58A82 /* FSLineChart-dummy.m */; };
+		40CFA5335168DB7C601956BAD35FA4DA /* Pods-FSLineChartTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A2081F540DC286C52CA908D9330C6A /* Pods-FSLineChartTests-dummy.m */; };
+		4D670BA81AC82E9DF8DB1345A20F0218 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		7CEFD195FDAAEB6FCF33CC72EA0DA9D0 /* UIColor+FSPalette.h in Headers */ = {isa = PBXBuildFile; fileRef = AF54BF2CC2887ED62D52D5017A5827E5 /* UIColor+FSPalette.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DFBEAF59F4FF93A5B69D817317506FC /* FSLineChart.h in Headers */ = {isa = PBXBuildFile; fileRef = B81F1E59E110777B59A757A004C103A6 /* FSLineChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5F3B9832C5DAC78D18360F0C2BF4578 /* FSLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A82FA1045A425F18F00BE63624E1D4DC /* FSLineChart.m */; };
+		ACC5764F94FDDAC75418A401444D79E8 /* Pods-FSLineChartUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66000DAF1C81581B8F49458857BD85B7 /* Pods-FSLineChartUITests-dummy.m */; };
+		B531EF6FFCF2013FDD07DCECF45AFBD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		BD06EFFDBE283A52755AB039D647F2B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		D62B14E2DFA224D7C290AC49B06BCF44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		D8712B35CBE6320329592FB1855E4AE9 /* Pods-FSLineChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E4A984390A55477C43D92BD6F86C62 /* Pods-FSLineChart-dummy.m */; };
+		F7D92B6E15C3EBD380472015DC877881 /* UIColor+FSPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE94A5BC7B417919F7A7154EAC27649 /* UIColor+FSPalette.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		934A2DA7155A3632D3C3F139C4138ACE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2019D0A11AD1696A311A26E900DB8854;
+			remoteInfo = FSLineChart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02CFD7308878AEC57A7B19B72E2FFD02 /* libFSLineChart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFSLineChart.a; path = libFSLineChart.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		074474531D3B92ED868F05CDE0D064DE /* Pods-FSLineChart-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FSLineChart-resources.sh"; sourceTree = "<group>"; };
+		29A2081F540DC286C52CA908D9330C6A /* Pods-FSLineChartTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FSLineChartTests-dummy.m"; sourceTree = "<group>"; };
+		3DE94A5BC7B417919F7A7154EAC27649 /* UIColor+FSPalette.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+FSPalette.m"; path = "FSLineChart/FSLineChart/UIColor+FSPalette.m"; sourceTree = "<group>"; };
+		3E2819BAA170C32923E242C36EB6B00F /* Pods-FSLineChartUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FSLineChartUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		453C25BCD88D19E9E6630DAC53ECF083 /* libPods-FSLineChart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FSLineChart.a"; path = "libPods-FSLineChart.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EF04265C77C4878F9A19AD50853104 /* Pods-FSLineChartTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FSLineChartTests-resources.sh"; sourceTree = "<group>"; };
+		4C2968242A4210C6FA9CDAAAB62A2598 /* libPods-FSLineChartTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FSLineChartTests.a"; path = "libPods-FSLineChartTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		583AA8436F8EE5D1008001C48B33C31E /* Pods-FSLineChartUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FSLineChartUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5AF7405CA025FDDFC39A0AC4CC830A2E /* Pods-FSLineChartTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FSLineChartTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		66000DAF1C81581B8F49458857BD85B7 /* Pods-FSLineChartUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FSLineChartUITests-dummy.m"; sourceTree = "<group>"; };
+		6BF5AF1C8577B0968046C8379746E970 /* Pods-FSLineChartTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FSLineChartTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		796FAEBAA2527C4E459C8F416B213597 /* Pods-FSLineChartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSLineChartUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F10E9D25D2E28B54A04FCFF640CB8E3 /* Pods-FSLineChartUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FSLineChartUITests-frameworks.sh"; sourceTree = "<group>"; };
+		8A56204B0343E1A5677C6A998420FBEC /* Pods-FSLineChartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSLineChartTests.release.xcconfig"; sourceTree = "<group>"; };
+		915CFF69FA83C8140170DEAFF51E7CD7 /* FSLineChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSLineChart.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0BA30C7E8CE215ED8383ABB9A46E3E8 /* libPods-FSLineChartUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FSLineChartUITests.a"; path = "libPods-FSLineChartUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82FA1045A425F18F00BE63624E1D4DC /* FSLineChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSLineChart.m; path = FSLineChart/FSLineChart/FSLineChart.m; sourceTree = "<group>"; };
+		ADEDAC57B4FF51A3376997F4F89C44AF /* Pods-FSLineChart-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FSLineChart-frameworks.sh"; sourceTree = "<group>"; };
+		AF54BF2CC2887ED62D52D5017A5827E5 /* UIColor+FSPalette.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+FSPalette.h"; path = "FSLineChart/FSLineChart/UIColor+FSPalette.h"; sourceTree = "<group>"; };
+		AFFF1F59A0D9F7DCE811B8A1DFA39F99 /* Pods-FSLineChartTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FSLineChartTests-frameworks.sh"; sourceTree = "<group>"; };
+		B2FB8E9A217468E38EF3041CD42C4DCE /* Pods-FSLineChartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSLineChartUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B7612CA7AF41B425147352CF43DDB4F1 /* FSLineChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSLineChart-prefix.pch"; sourceTree = "<group>"; };
+		B81F1E59E110777B59A757A004C103A6 /* FSLineChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSLineChart.h; path = FSLineChart/FSLineChart/FSLineChart.h; sourceTree = "<group>"; };
+		BFF58A5FF357BFC3ADCF9BC263B1CA9D /* Pods-FSLineChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSLineChart.release.xcconfig"; sourceTree = "<group>"; };
+		C7F86EA4A0EE4980761B723E263E5725 /* Pods-FSLineChartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSLineChartTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D1A47BAA5D80CD4E79B3C646C057D144 /* Pods-FSLineChart-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FSLineChart-acknowledgements.plist"; sourceTree = "<group>"; };
+		E2E4A984390A55477C43D92BD6F86C62 /* Pods-FSLineChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FSLineChart-dummy.m"; sourceTree = "<group>"; };
+		F230E4377D94CEE785975D3CBD308276 /* Pods-FSLineChart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSLineChart.debug.xcconfig"; sourceTree = "<group>"; };
+		FF4C022C064C20D457A5B75E79599647 /* Pods-FSLineChartUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FSLineChartUITests-resources.sh"; sourceTree = "<group>"; };
+		FFF7B7511BF103B8776F8F55F54E7ED4 /* Pods-FSLineChart-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FSLineChart-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FFFF1C630E91935C5B6C70CB18A58A82 /* FSLineChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSLineChart-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DB939BF2ED2E29AB7BED23D2C8235B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D670BA81AC82E9DF8DB1345A20F0218 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71FB9D7C3F19AA53F903BD69E1FFE11D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD06EFFDBE283A52755AB039D647F2B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C037757FFA659B83765E510E230F190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D62B14E2DFA224D7C290AC49B06BCF44 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		968F1D3ACAA3C8BABCB2C28338AD1652 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B531EF6FFCF2013FDD07DCECF45AFBD6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2957983433D882A1484EFC7753CF9A74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02CFD7308878AEC57A7B19B72E2FFD02 /* libFSLineChart.a */,
+				453C25BCD88D19E9E6630DAC53ECF083 /* libPods-FSLineChart.a */,
+				4C2968242A4210C6FA9CDAAAB62A2598 /* libPods-FSLineChartTests.a */,
+				A0BA30C7E8CE215ED8383ABB9A46E3E8 /* libPods-FSLineChartUITests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		377A8BAAC97B18B5766C7D0D4DFBFEAC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				915CFF69FA83C8140170DEAFF51E7CD7 /* FSLineChart.xcconfig */,
+				FFFF1C630E91935C5B6C70CB18A58A82 /* FSLineChart-dummy.m */,
+				B7612CA7AF41B425147352CF43DDB4F1 /* FSLineChart-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FSLineChart";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				867E34C174F76AEE5AD35CF59C57D28C /* Pods */,
+				2957983433D882A1484EFC7753CF9A74 /* Products */,
+				D23FF7154B828BE6EC51502DA340666F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		867E34C174F76AEE5AD35CF59C57D28C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91A6A5706F6CEB4E0251AFCD4576F359 /* FSLineChart */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A6678213D2343480DE9122B0A1B4305 /* Pods-FSLineChartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				583AA8436F8EE5D1008001C48B33C31E /* Pods-FSLineChartUITests-acknowledgements.markdown */,
+				3E2819BAA170C32923E242C36EB6B00F /* Pods-FSLineChartUITests-acknowledgements.plist */,
+				66000DAF1C81581B8F49458857BD85B7 /* Pods-FSLineChartUITests-dummy.m */,
+				7F10E9D25D2E28B54A04FCFF640CB8E3 /* Pods-FSLineChartUITests-frameworks.sh */,
+				FF4C022C064C20D457A5B75E79599647 /* Pods-FSLineChartUITests-resources.sh */,
+				B2FB8E9A217468E38EF3041CD42C4DCE /* Pods-FSLineChartUITests.debug.xcconfig */,
+				796FAEBAA2527C4E459C8F416B213597 /* Pods-FSLineChartUITests.release.xcconfig */,
+			);
+			name = "Pods-FSLineChartUITests";
+			path = "Target Support Files/Pods-FSLineChartUITests";
+			sourceTree = "<group>";
+		};
+		91A6A5706F6CEB4E0251AFCD4576F359 /* FSLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				B81F1E59E110777B59A757A004C103A6 /* FSLineChart.h */,
+				A82FA1045A425F18F00BE63624E1D4DC /* FSLineChart.m */,
+				AF54BF2CC2887ED62D52D5017A5827E5 /* UIColor+FSPalette.h */,
+				3DE94A5BC7B417919F7A7154EAC27649 /* UIColor+FSPalette.m */,
+				377A8BAAC97B18B5766C7D0D4DFBFEAC /* Support Files */,
+			);
+			name = FSLineChart;
+			path = FSLineChart;
+			sourceTree = "<group>";
+		};
+		92235924214213FCB3BA6B6A5447CBC5 /* Pods-FSLineChartTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BF5AF1C8577B0968046C8379746E970 /* Pods-FSLineChartTests-acknowledgements.markdown */,
+				5AF7405CA025FDDFC39A0AC4CC830A2E /* Pods-FSLineChartTests-acknowledgements.plist */,
+				29A2081F540DC286C52CA908D9330C6A /* Pods-FSLineChartTests-dummy.m */,
+				AFFF1F59A0D9F7DCE811B8A1DFA39F99 /* Pods-FSLineChartTests-frameworks.sh */,
+				45EF04265C77C4878F9A19AD50853104 /* Pods-FSLineChartTests-resources.sh */,
+				C7F86EA4A0EE4980761B723E263E5725 /* Pods-FSLineChartTests.debug.xcconfig */,
+				8A56204B0343E1A5677C6A998420FBEC /* Pods-FSLineChartTests.release.xcconfig */,
+			);
+			name = "Pods-FSLineChartTests";
+			path = "Target Support Files/Pods-FSLineChartTests";
+			sourceTree = "<group>";
+		};
+		9DA1D70B457D3EB6C56B2DA2E7C27C61 /* Pods-FSLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				FFF7B7511BF103B8776F8F55F54E7ED4 /* Pods-FSLineChart-acknowledgements.markdown */,
+				D1A47BAA5D80CD4E79B3C646C057D144 /* Pods-FSLineChart-acknowledgements.plist */,
+				E2E4A984390A55477C43D92BD6F86C62 /* Pods-FSLineChart-dummy.m */,
+				ADEDAC57B4FF51A3376997F4F89C44AF /* Pods-FSLineChart-frameworks.sh */,
+				074474531D3B92ED868F05CDE0D064DE /* Pods-FSLineChart-resources.sh */,
+				F230E4377D94CEE785975D3CBD308276 /* Pods-FSLineChart.debug.xcconfig */,
+				BFF58A5FF357BFC3ADCF9BC263B1CA9D /* Pods-FSLineChart.release.xcconfig */,
+			);
+			name = "Pods-FSLineChart";
+			path = "Target Support Files/Pods-FSLineChart";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D23FF7154B828BE6EC51502DA340666F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DA1D70B457D3EB6C56B2DA2E7C27C61 /* Pods-FSLineChart */,
+				92235924214213FCB3BA6B6A5447CBC5 /* Pods-FSLineChartTests */,
+				8A6678213D2343480DE9122B0A1B4305 /* Pods-FSLineChartUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		19BDACDD1EDCCD6811CF0DBAAB17A46E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DFBEAF59F4FF93A5B69D817317506FC /* FSLineChart.h in Headers */,
+				7CEFD195FDAAEB6FCF33CC72EA0DA9D0 /* UIColor+FSPalette.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2019D0A11AD1696A311A26E900DB8854 /* FSLineChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F81CC9FCB8A08EBE1F00E4F32D36C02A /* Build configuration list for PBXNativeTarget "FSLineChart" */;
+			buildPhases = (
+				DCC298155300ED9507F3A82AE9482602 /* Sources */,
+				71FB9D7C3F19AA53F903BD69E1FFE11D /* Frameworks */,
+				19BDACDD1EDCCD6811CF0DBAAB17A46E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSLineChart;
+			productName = FSLineChart;
+			productReference = 02CFD7308878AEC57A7B19B72E2FFD02 /* libFSLineChart.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5B779E7F4A81E7FD2739F968C5536410 /* Pods-FSLineChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD95CB9AF570D0678AC39C8930BB068C /* Build configuration list for PBXNativeTarget "Pods-FSLineChart" */;
+			buildPhases = (
+				AA0C4A411EB272C9E9D26502875EEF70 /* Sources */,
+				968F1D3ACAA3C8BABCB2C28338AD1652 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				753B0136E0CCFCF6226E1A590B4C706E /* PBXTargetDependency */,
+			);
+			name = "Pods-FSLineChart";
+			productName = "Pods-FSLineChart";
+			productReference = 453C25BCD88D19E9E6630DAC53ECF083 /* libPods-FSLineChart.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6700C3B5A4544B7C8B526FA34BC4DF2A /* Pods-FSLineChartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FD420B7414952E7034CEF3FBE53C254 /* Build configuration list for PBXNativeTarget "Pods-FSLineChartTests" */;
+			buildPhases = (
+				260747F56A455588B0E5CC5EECDF006A /* Sources */,
+				8C037757FFA659B83765E510E230F190 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FSLineChartTests";
+			productName = "Pods-FSLineChartTests";
+			productReference = 4C2968242A4210C6FA9CDAAAB62A2598 /* libPods-FSLineChartTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		99319C28BEAEFDEF2B943CBF66767F8A /* Pods-FSLineChartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77773668B2F7A1F0F749746F8003A7F5 /* Build configuration list for PBXNativeTarget "Pods-FSLineChartUITests" */;
+			buildPhases = (
+				89A31D1BCCE3BFE2D51DB24F00E17D9A /* Sources */,
+				2DB939BF2ED2E29AB7BED23D2C8235B0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FSLineChartUITests";
+			productName = "Pods-FSLineChartUITests";
+			productReference = A0BA30C7E8CE215ED8383ABB9A46E3E8 /* libPods-FSLineChartUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 2957983433D882A1484EFC7753CF9A74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2019D0A11AD1696A311A26E900DB8854 /* FSLineChart */,
+				5B779E7F4A81E7FD2739F968C5536410 /* Pods-FSLineChart */,
+				6700C3B5A4544B7C8B526FA34BC4DF2A /* Pods-FSLineChartTests */,
+				99319C28BEAEFDEF2B943CBF66767F8A /* Pods-FSLineChartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		260747F56A455588B0E5CC5EECDF006A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40CFA5335168DB7C601956BAD35FA4DA /* Pods-FSLineChartTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89A31D1BCCE3BFE2D51DB24F00E17D9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC5764F94FDDAC75418A401444D79E8 /* Pods-FSLineChartUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0C4A411EB272C9E9D26502875EEF70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8712B35CBE6320329592FB1855E4AE9 /* Pods-FSLineChart-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC298155300ED9507F3A82AE9482602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3052B2DEF20A1DB41791503C9F509041 /* FSLineChart-dummy.m in Sources */,
+				A5F3B9832C5DAC78D18360F0C2BF4578 /* FSLineChart.m in Sources */,
+				F7D92B6E15C3EBD380472015DC877881 /* UIColor+FSPalette.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		753B0136E0CCFCF6226E1A590B4C706E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSLineChart;
+			target = 2019D0A11AD1696A311A26E900DB8854 /* FSLineChart */;
+			targetProxy = 934A2DA7155A3632D3C3F139C4138ACE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		595391DF1EBC6516F86EA177D6340DE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 915CFF69FA83C8140170DEAFF51E7CD7 /* FSLineChart.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSLineChart/FSLineChart-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E493F85290AFC3E7D1E13CF0E366461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 915CFF69FA83C8140170DEAFF51E7CD7 /* FSLineChart.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSLineChart/FSLineChart-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AA54ECE85BFC5B12936E8CF9FF2E99B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F230E4377D94CEE785975D3CBD308276 /* Pods-FSLineChart.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B591091379E6F44CE0421FB423CCB9E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A56204B0343E1A5677C6A998420FBEC /* Pods-FSLineChartTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B5B57306337C33D839AF6F2F1C220617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF58A5FF357BFC3ADCF9BC263B1CA9D /* Pods-FSLineChart.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D2FB0B68C3CD166908C017249AE0923F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 796FAEBAA2527C4E459C8F416B213597 /* Pods-FSLineChartUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D36F62FB65DB20C2146D5C049DDAC32B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2FB8E9A217468E38EF3041CD42C4DCE /* Pods-FSLineChartUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E63E0DE740DE734301C94EE7AB2E78A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7F86EA4A0EE4980761B723E263E5725 /* Pods-FSLineChartTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FD420B7414952E7034CEF3FBE53C254 /* Build configuration list for PBXNativeTarget "Pods-FSLineChartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E63E0DE740DE734301C94EE7AB2E78A7 /* Debug */,
+				B591091379E6F44CE0421FB423CCB9E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77773668B2F7A1F0F749746F8003A7F5 /* Build configuration list for PBXNativeTarget "Pods-FSLineChartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D36F62FB65DB20C2146D5C049DDAC32B /* Debug */,
+				D2FB0B68C3CD166908C017249AE0923F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD95CB9AF570D0678AC39C8930BB068C /* Build configuration list for PBXNativeTarget "Pods-FSLineChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA54ECE85BFC5B12936E8CF9FF2E99B8 /* Debug */,
+				B5B57306337C33D839AF6F2F1C220617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F81CC9FCB8A08EBE1F00E4F32D36C02A /* Build configuration list for PBXNativeTarget "FSLineChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E493F85290AFC3E7D1E13CF0E366461 /* Debug */,
+				595391DF1EBC6516F86EA177D6340DE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
